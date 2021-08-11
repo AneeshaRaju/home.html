@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mini Doctor </title>
+<style>
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4169E1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+div{
+    border-radius: 5px;
+    width: 600px;
+	height: 400px;
+	text-align: center;
+	margin-top:150px;
+	margin-left:550px;
+   } 
+   
+h1{
+   color: #4169E1;
+   font-size: 55px;
+  }
+h3{
+   color:white;
+  }
+
+#nname {
+    padding: 5px;
+    color: #000;
+    font-size: 15px;
+    background: transparent;
+    -webkit-appearance: none;
+	border-color:#4169E1;
+
+}
+</style>
+</head>
+
+<body background="C:\Users\aneesha\Desktop\images\image1.png">
+<ul>
+  <li><a class="active" href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/home.html">Home</a></li>
+  <li><a href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/feedback.html">Feedback</a></li>
+  <li><a href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/contact_us.html">Contact Us</a></li>
+  <li><a href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/about_us.html">About Us</a></li>
+</ul>
+<div>
+<h1><b>Welcome to Mini Doctor</b></h1>
+<form>
+<h3><b>Tell us your Pain</b></h3>
+<select  id="nname" name="dropdownlist"  style="border-radius: 5px; width:450px; height:30px" >
+<option selected > </option>
+<option value="Headache" id="hd">Headache</option>
+<option value="Cold">Cold</option>
+<option value="Cough">Cough</option>
+<option value="Fever">Fever</option>
+<option value="Leg pains">Legs pain</option>
+<option value="Hand pains">Hands pain</option>
+<option value="Vomitings">Vomitings</option>
+<option value="Neck pain">Neck pain</option>
+<option value="Body pains">Body pains</option>
+<option value="Motions">Motions</option>
+<option value="Joint pains">Joint pains</option>
+</select>
+<h3><b>Medicine/Tips</b></h3>
+<select id="nname1" name="dropdownlist"  style="border-radius: 5px; width:330px; height:30px" >
+<option selected ></option>
+<option value="Medicine" id="m">Medicine</option>
+<option value="Tips" id="t">Tips for Pain Relief</option>
+</select>
+<br><br>
+<button type="button" style="background-color:#4169E1 ; border-color: #4169E1; color:white; width:120px; height:30px; border-radius: 3px;" value="SUBMIT" id="submit" onClick="test()" >SUBMIT </button>
+<script>
+function test(){
+var v=document.getElementById("nname").value;
+var a=document.getElementById("nname1").value;
+if(a=='Tips' && v=='Headache'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Theadache.html";
+}
+}
+else if(a=='Tips' && v=='Cold'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tcold.html";
+}
+}
+else if (a=='Tips' && v=='Cough'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tcough.html";
+}
+}
+else if(a=='Tips' && v=='Fever'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tfever.html";
+}
+}
+else if(a=='Tips' && v=='Vomitings'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tvomitings.html";
+}
+}
+else if(a=='Tips' && v=='Leg pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tlegs_pain.html";
+}
+}
+else if(a=='Tips' && v=='Hand pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Thands_pain.html";
+}
+}
+else if(a=='Tips' && v=='Neck pain'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tneck_pain.html";
+}
+}
+else if(a=='Tips' && v=='Body pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tbody_pains.html";
+}
+}
+else if(a=='Tips' && v=='Motions'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tmotions.html";
+}
+}
+else if(a=='Tips' && v=='Joint pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Tjoint_pains.html";
+}
+}
+else if(a=='Medicine' && v=='Headache'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mheadache.html";
+}
+}
+else if(a=='Medicine' && v=='Cold'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mcold.html";
+}
+}
+else if(a=='Medicine' && v=='Cough'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mcough.html";
+}
+}
+else if(a=='Medicine' && v=='Fever'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mfever.html";
+}
+}
+else if(a=='Medicine' && v=='Vomitings'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mvomitings.html";
+}
+}
+else if(a=='Medicine' && v=='Leg pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mlegs_pain.html";
+}
+}
+else if(a=='Medicine' && v=='Hand pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mhands_pain.html";
+}
+}
+else if(a=='Medicine' && v=='Neck pain'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mneck_pain.html";
+}
+}
+else if(a=='Medicine' && v=='Body pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mbody_pains.html";
+}
+}
+else if(a=='Medicine' && v=='Motions'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mmotions.html";
+}
+}
+else if(a=='Medicine' && v=='Joint pains'){
+test1();
+function test1(){
+window.location.href="file:///C:/Users/aneesha/Desktop/Java%20Class/Front_end_project/Mjoint_pains.html";
+}
+}
+}
+</script>
+</form>
+</div>
+</body>
+</html>

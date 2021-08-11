@@ -1,0 +1,76 @@
+<html>
+<head>
+<title> FeedBack </title>
+<style>
+h1{
+   color:#4169E1;
+   font-size:60px;
+   margin-top:50px;
+  }
+h3{
+   color:white;
+  }
+div{
+    border-radius: 5px;
+    width: 600px;
+	height: 450px;
+	text-align: center;
+	margin-top:5px;
+	padding-top: 10px;
+	border: 2px solid #4169E1;
+   } 
+#nname {
+    padding: 1px;
+    color: #000;
+    font-size: 15px;
+    background: transparent;
+    -webkit-appearance: none;
+	border-color:#4169E1;
+
+}
+</style>
+<script>
+function validation(){
+var name=document.myform.name.value;
+if(name==null || name==""){
+alert("Name can't be blank");
+return false;
+}
+var dropdownlist=document.myform.dropdownlist.value;
+if(dropdownlist==""){
+alert("Feel free to Rate Us");
+return false;
+}
+var name=document.myform.name.value;
+if(name!=null || name==null){
+return true;
+}
+}
+</script>
+</head>
+
+<body background="C:\Users\aneesha\Desktop\images\image2.jpg">
+<center>
+<h1>Feedback</h1>
+<div>
+<form name="myform" method="post" action="thanks.html" onsubmit="return validation()">
+<h3><b>Enter your Name</b></h3>
+<input id="nname" type="text" name="name"><br><br>
+<h3><b>Rate Us </b></h3>
+<select id="nname" name="dropdownlist"  style="border-radius: 5px; width:250px; height:30px">
+<option selected > </option>
+<option value="Excellent">Excellent</option>
+<option value="Good">Good</option>
+<option value="Ok">Ok</option>
+<option value="Average">Average</option>
+<option value="Below Average">Below Average</option>
+</select>
+<br><br>
+<h3><b>Add Comment </b></h3>
+<input id="nname" type="text" name="comment" style="width:500px; height:100px"><br><br><br>
+<button style="background-color:#4169E1 ; border-color: #4169E1; color:white; width:120px; height:30px; border-radius: 3px;" value="SUBMIT"> <b>SUBMIT</b> </button>
+</div>
+</center>
+</form>
+</body>
+</html>

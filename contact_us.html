@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+<title> Contact_Us </title>
+<style>
+h1{
+   color:#4169E1;
+   font-size:60px;
+   margin-top:30px;
+   text-align:center;
+  }
+ h3{
+    color:white;
+	}
+img{
+    margin-top:2px;
+	}
+div{
+    border-radius: 5px;
+    width: 500px;
+	height: 350px;
+	text-align: left;
+	margin-top:10px;
+	padding-top: 20px;
+	border: 2px solid #4169E1;
+	padding-left: 40px;
+   } 
+ #nname {
+    padding: 2px;
+    color: #000;
+    font-size: 15px;
+    background: transparent;
+    -webkit-appearance: none;
+	border-color:#4169E1;
+	}
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #4169E1;
+}
+</style>
+<script>
+function validation(){
+var name=document.myform.name.value;
+if(name==null || name==""){
+alert("Name can't be blank");
+return false;
+}
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false; 
+}
+var name=document.myform.message.value;
+if(name==null || name==""){
+alert("Message can't be blank");
+return false;
+}
+}
+</script>
+</head>
+
+<body background="C:\Users\aneesha\Desktop\images\image4.jpg">
+<h1>Contact Us</h1>
+<center>
+<div class="text-line">
+<form name="myform" method="post" action="response.html" onsubmit="return validation()">
+<h3><b>Full Name</b></h3>
+<input id="nname"  type="text" name="name"><br>
+<h3><b>E-Mail</b></h3>
+<input id="nname" type="text" name="email"><br>
+<h3><b>Message</b></h3>
+<input id="nname" type="text" name="message"><br><br><br>
+<button style="background-color:#4169E1 ; border-color: #4169E1; color:white; width:150px; height:35px; border-radius: 20px;" value="SUBMIT"> <b>CONTACT US</b> </button>
+</form>
+</div>
+</center>
+</body>
+</html>
